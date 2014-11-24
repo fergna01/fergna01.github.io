@@ -35,8 +35,16 @@
   </style>
 </head>
 <body>
+  <script type="text/javascript">
+    counter = 0
+    updateCounter = function() {
+      counter = counter + 1;
+      countSpot = document.querySelector('#myCounter'):
+      countSpot.innerHTML = "Correct: " + counter;
+    }
+  </script>
 <nav> 
-<input type="checkbox">
+<input type="checkbox" onclick="updateCounter();"> 
 <section class= "question">
   <p> Where did Kobe Bryant grow up?</p>
 </section> 
@@ -45,7 +53,7 @@
 </section>
 </nav>
 <nav> 
-<input type="checkbox">
+<input type="checkbox"onclick="updateCounter();">
 <section class= "question">
   <p> Who originally drafted Kobe Bryant in 1996?</p>
 </section> 
@@ -54,7 +62,7 @@
 </section>
 </nav>
 <nav> 
-<input type="checkbox">
+<input type="checkbox"onclick="updateCounter();">
 <section class= "question">
   <p> What has been Kobe Bryant's two jersey numbers?</p>
 </section> 
