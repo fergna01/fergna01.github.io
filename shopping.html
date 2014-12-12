@@ -1,20 +1,25 @@
-<html>
-<head> Grocery  Shoppng List
-  <link rel="stylesheet" href="shopping.css" type="type/css">
-</head>
-<body>
-<ul>
-  <li class=meat>Steak
-  </li>
-  <li class=fruit>Oranges</li>
-  <li class=vegetable>Celery</li>
-  <li class=fruit>Apples</li>
-  <li class=drink>Milk</li>
-  <li class=meat>Hamburger</li>
-  <li class=drink>Fanta Orange</li>
-  <li class=vegetable>Artichokes</li>
-  <li class=vegetable>Asparagus</li>
-  <li class=fruit>Strawberries</li>
-</ul>
-</body>
-</html>
+  <head>
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="shop.css" type="text/css">
+  </head>
+  <body >
+    <ul id="list"></ul>
+      <input type="text" id="item"/>
+      <select id="type">
+        <option>meat</option>
+        <option>candy</option>
+        <option>bakery</option>
+        <option>fruit</option>
+      </select>
+      <button onclick="addItem();">Add</button>
+      
+      <script type="text/javascript">
+       addItem = function() {
+           myNewItem = document.querySelector('#item');
+           myItemNode = document.createTextNode(myNewItem.value);
+           aType = document.querySelector('#type');
+           theList= document.querySelector('#list');
+           li= document.createElement("li");
+           li.classList.add(aType.value);
+           cb= document.createElement("input");
+           cb.type="checkbox
