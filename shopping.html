@@ -1,16 +1,18 @@
-<html> 
+<html>
   <head>
     <title>Shopping List</title>
-    <link rel="stylesheet" href="shop.css" type="text/css">
+    <link rel="stylesheet" href="shopping.css" type="text/css">
   </head>
-  <body >
+  <body>
+   <h1>Grocery List</h1>
     <ul id="list"></ul>
       <input type="text" id="item"/>
       <select id="type">
-        <option>meat</option>
-        <option>candy</option>
-        <option>bakery</option>
-        <option>fruit</option>
+        <option>Meats</option>
+        <option>Candy</option>
+        <option>Fruit</option>
+        <option>Vegetables</option>
+        <option>Beverages</option>
       </select>
       <button onclick="addItem();">Add</button>
       
@@ -23,5 +25,12 @@
            li= document.createElement("li");
            li.classList.add(aType.value);
            cb= document.createElement("input");
-           cb.type="checkbox
-          </html> 
+           cb.type="checkbox";
+           li.appendChild(cb);
+           li.appendChild(myItemNode);
+           theList.appendChild(li);
+           myNewItem.value = " ";
+       }
+     </script>
+  </body>
+<html>
